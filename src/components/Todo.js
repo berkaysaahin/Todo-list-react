@@ -5,7 +5,7 @@ import React from 'react'
 const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
     return (
         <div className='Todo'>
-            <p onClick={() => toggleComplete(task.id)} className={`${task.completed ? 'completed' : ""}`}>{task.task}</p>
+            <p onClick={() => toggleComplete(task.id)} className={`${task.completed ? 'completed' : 'incompleted'}`}>{task.task}</p>
             <div>
                 <FontAwesomeIcon icon={faPenToSquare} onClick={() =>
                     editTodo(task.id)

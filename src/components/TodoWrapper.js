@@ -21,7 +21,7 @@ const TodoWrapper = () => {
     }
 
     const toggleComplete = (id) => {
-        setTodos(todos.map(todo => todo.id === id ? { ...todo, completed: !todo.competed } : todo))
+        setTodos(todos.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo))
     }
 
     const deleteTodo = (id) => {
