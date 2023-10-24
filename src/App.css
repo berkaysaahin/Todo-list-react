@@ -9,9 +9,9 @@
 
 body {
   background: #2E4F4F;
-  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .App {
@@ -24,11 +24,18 @@ h1 {
   font-size: 1.75rem;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 .TodoWrapper {
   background: #2C3333;
   margin-top: 5rem;
+  margin-left: 30%;
   padding: 2rem;
   border-radius: 5px;
+  width: 40%;
+  justify-content: center;
 }
 
 .TodoForm {
@@ -73,7 +80,7 @@ h1 {
 }
 
 .Todo {
-  display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background: #2E4F4F;
@@ -81,7 +88,7 @@ h1 {
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
-  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .fa-trash {
@@ -101,7 +108,8 @@ h1 {
 .completed {
   color: #fff;
   text-decoration: line-through;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 3px;
+  text-decoration-color:#B2533E ;
   cursor: pointer;
 }
 
@@ -109,4 +117,23 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
+
+.navi {
+  background-color: #2C3333;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding: 20px;
+  flex-direction: row;
+}
  
+.home {
+order: 1;
+color: white;
+}
+
+.login {
+order: 2;
+color: white;
+}

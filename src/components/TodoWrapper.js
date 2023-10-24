@@ -10,8 +10,8 @@ const TodoWrapper = () => {
     const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos")) || [])
 
     useEffect(() => {
-         localStorage.setItem("todos", JSON.stringify(todos))
-       
+        localStorage.setItem("todos", JSON.stringify(todos))
+
     }, [todos])
 
 
@@ -52,8 +52,6 @@ const TodoWrapper = () => {
                 ) : (
                     <Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo} />
                 )
-
-
             ))}
             <button className='todo-btn' onClick={deleteAll}>Delete All Tasks</button>
         </div>
