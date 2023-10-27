@@ -130,10 +130,22 @@ padding: 20px;
  
 .home {
 order: 1;
-color: white;
+color: #748383;
+text-decoration: none;
+font-size: 1.2rem;
+}
+
+.home:hover {
+  color:white
 }
 
 .login {
 order: 2;
-color: white;
+color: #748383;
+text-decoration: none;
+font-size: 1.2rem;
+}
+
+.login:hover {
+  color:white
 }
